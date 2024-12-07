@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade Smart</title>
+    <link rel="stylesheet" href="style/estilo.css">
+    <script src="script/JavaScript.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Barra de navegação centralizada -->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="#investimentos" class="dropbtn">Aulas</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#s.i">Simulação de Investimentos</a></li>
+                        <li><a href="#c.t.i">Cursos e Tutoriais Interativos</a></li>
+                        <li><a href="#v.a">Video Aulas</a></li>
+                        <li><a href="g.f">Game de Finanças</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSePqOfXmxNCveMcZgLW-jAKnMnjX9itu7C62lXYL-ol1_J0WA/viewform?usp=header">Feedback</a></li>
+                <li><a href="criacao.html">Criação</a></li>
+                <li class="dropdown">
+                    <a href="#sobre" class="dropbtn">Sobre</a>
+                    <ul class="dropdown-content">
+                        <li><a href="comunidade.html">Comunidade</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu lateral/Menu lateral ao clicar no ícone  -->
+    <div class="menu-lateral" onclick="toggleMenu()">&#9776;</div>
+
+    <aside id="side-menu" class="side-menu">
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        <ul>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="desempenho.html">Desempenho</a></li>
+            <li><a href="#configuracoes">Configurações</a></li>
+            <li><a href="#ajuda">Ajuda</a></li>
+            <li><a href="#sair">Sair</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section class="section">
+        <div>
+            <h1>Comunidade Smart</h1>
+        </div>
+        </section>
+        <section class="forum">
+            <h2>Fórum de Discussões</h2>
+            <ul id="topicos">
+                <li>
+                    <h3><a href="#">Como começar a investir?</a></h3>
+                    <p>Discussão iniciada por <strong>Rebeca</strong></p>
+                </li>
+                <li>
+                    <h3><a href="#">Vale a pena investir em ações em 2025?</a></h3>
+                    <p>Discussão iniciada por <strong>Maria</strong></p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="postar">
+            <h2>Iniciar Nova Discussão</h2>
+            <form id="nova-discussao">
+                <input type="text" id="titulo" placeholder="Título do tópico">
+                <textarea id="conteudo" placeholder="Escreva sua mensagem aqui..."></textarea>
+                <button type="submit" class="botao">Postar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Smart - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
